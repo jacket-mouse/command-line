@@ -1,3 +1,28 @@
+## git常见使用场景
+
+### 自己使用
+
+```shell
+git add .
+git commit -m "descriptions"
+git push
+```
+
+### 协作使用 
+
+1. 同一分支下的使用
+
+```shell
+git stash -u # 暂存本地的修改
+git pull
+git stash apply
+git add .
+git commit -m "descriptions"
+git push
+```
+
+2. 不同分支的使用
+
 ## git stash
 
 要在命令行中将 Git 修改的内容保存到暂存区（stash），您可以使用以下命令：
