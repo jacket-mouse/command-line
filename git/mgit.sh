@@ -1,5 +1,9 @@
 #!/bin/sh
 
 git add .
-git commit -m "$1"
-git push
+if [ $? = 0 ]; then
+	git commit -m "$1"
+	if [ $? = 0]; then
+		git push
+	fi
+fi
